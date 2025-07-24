@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'movider' => [
+        'key' => env('MOVIDER_KEY'),
+        'secret' => env('MOVIDER_SECRET'),
+    ],
+
 ];

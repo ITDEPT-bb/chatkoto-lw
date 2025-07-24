@@ -28,4 +28,7 @@ Route::middleware('auth')->group(function () {
 
     Volt::route('confirm-password', 'pages.auth.confirm-password')
         ->name('password.confirm');
+
+    Volt::route('verify-phone', 'pages.auth.verify-phone')
+        ->name('verification.phone.notice');
 });
