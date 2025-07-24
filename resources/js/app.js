@@ -1,7 +1,8 @@
 import './bootstrap';
 
-import { createLaravelVitePlugin } from 'laravel-vite-plugin'
-import 'laravel-vite-plugin/plugins/livewire'
-import { Livewire } from 'livewire'
+import { Livewire, Alpine } from '../../vendor/livewire/livewire/dist/livewire.esm';
+import Clipboard from '@ryangjchandler/alpine-clipboard'
+
+Alpine.plugin(Clipboard)
 
 Livewire.start()
