@@ -25,5 +25,6 @@
     # Send Requests To Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+    RewriteCond %{REQUEST_URI} ^/livewire/livewire\.js$
+    RewriteRule ^ index.php [L,NC]
 </IfModule>
